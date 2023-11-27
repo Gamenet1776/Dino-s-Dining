@@ -9,6 +9,10 @@ header {
     justify-content: space-around;
 }
 
+header h1{
+    font-size:5em;
+}
+
 .button {
     width: 10em;
     height: 10em;
@@ -23,11 +27,18 @@ header {
     background: #236154;
     display: flex;
     justify-content: space-around;
-    font-size: 2.2em;
+    font-size: 1em;
 }
 
 a {
+    background-color: #4B95A9;
+    border: black;
     color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
 }
 
 .half {
@@ -36,4 +47,13 @@ a {
     align-items: center;
     width: 50em;
     height: 50em;
+}
+
+p {
+    color: white;
+}
+
+h2 {
+    color:white;
+    font-size:20px;
 }
