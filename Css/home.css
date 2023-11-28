@@ -47,17 +47,27 @@ a {
     align-items: center;
     width: 50em;
     height: 50em;
+    
 }
 
 p {
     color: white;
+    font-size: 29px;
 }
 
 h2 {
     color:white;
-    font-size:20px;
+    font-size:50px;
 }
 
 .right {
-    display:
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.textright {
+    display:flex;
+    align-items: right;
+    justify-content: right;
 }
