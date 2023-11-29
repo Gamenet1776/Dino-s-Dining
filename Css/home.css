@@ -1,6 +1,10 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
 body {
     background: #527B65;
-
 }
 
 header {
@@ -28,6 +32,7 @@ header h1{
     display: flex;
     justify-content: space-around;
     font-size: 1em;
+    padding: 5px;
 }
 
 a {
@@ -71,3 +76,9 @@ h2 {
     align-items: right;
     justify-content: right;
 }
+
+ul {
+    color:white;
+    font-size:50px;
+}
+

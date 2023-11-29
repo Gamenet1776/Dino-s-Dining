@@ -1,6 +1,10 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
 body {
     background: #527B65;
-
 }
 
 header {
@@ -24,16 +28,16 @@ header {
     display: flex;
     justify-content: space-around;
     font-size: 2.2em;
+    padding: 5px;
 }
 
 a {
+    background-color: #4B95A9;
+    border: black;
     color: white;
-}
-
-.half {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50em;
-    height: 50em;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
 }

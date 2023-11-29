@@ -1,6 +1,10 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
 body {
     background: #527B65;
-
 }
 
 header {
@@ -9,14 +13,14 @@ header {
     justify-content: space-around;
 }
 
-.button {
-    width: 10em;
-    height: 10em;
-}
-
 .logo {
     width: 5em;
     height: 5em;
+}
+
+.button {
+    width: 10em;
+    height: 10em;
 }
 
 .nav {
@@ -24,16 +28,36 @@ header {
     display: flex;
     justify-content: space-around;
     font-size: 2.2em;
+    padding: 5px;
+
 }
 
 a {
+    background-color: #4B95A9;
+    border: black;
     color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
 }
 
-.half {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50em;
-    height: 50em;
+h1 {
+    text-align: center;
+    margin: 1em;
+}
+
+header h1 {
+    color: black;
+}
+
+h2 {
+    color: white;
+    margin: 1em;
+}
+
+p {
+    color: #F8F8F0;
+    margin: 1em;
 }

@@ -1,12 +1,21 @@
+* {
+    margin:0;
+    padding: 0;
+}
+
 body {
     background: #527B65;
-
 }
 
 header {
     background: #F8F8F0;
     display: flex;
     justify-content: space-around;
+}
+
+header h1{
+    font-size:5em;
+    color:black;
 }
 
 .button {
@@ -23,11 +32,19 @@ header {
     background: #236154;
     display: flex;
     justify-content: space-around;
-    font-size: 2.2em;
+    font-size: 1em;
+    padding: 5px;
 }
 
 a {
+    background-color: #4B95A9;
+    border: black;
     color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 26px;
 }
 
 .half {
@@ -38,3 +55,56 @@ a {
     height: 50em;
 }
 
+header h1{
+    font-size:5em;
+}
+
+
+.logo {
+    width: 5em;
+    height: 5em;
+}
+
+h1 {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size:50px;
+    
+    }
+
+    p {
+        color: white;
+        font-size: 20px;
+    }
+    
+    h2 {
+        color:white;
+        font-size:42px;
+    }
+
+    .pro {
+	    top: 70px;
+	    left: 50px;
+        height: 600px;
+        width: 500px;
+    }
+
+    .container {
+        display: flex;
+      }
+      
+      .img {
+        flex: 0 0 auto;
+      }
+
+      .text {
+        flex:1;
+      }
+
+      .right {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+    }
