@@ -14,6 +14,19 @@ header {
     justify-content: space-around;
 }
 
+header h1 {
+    color: black;
+}
+
+img {
+    max-width: 10em;
+}
+
+.button {
+    width: 6em;
+    height: 6em;
+}
+
 .logo {
     width: 5em;
     height: 5em;
@@ -23,7 +36,7 @@ header {
     background: #236154;
     display: flex;
     justify-content: space-around;
-    font-size: 2.2em;
+    font-size: 1em;
     padding: 5px;
 }
 
@@ -42,6 +55,12 @@ p {
     margin-top: 1em;
     color: white;
     font-size: 29px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 1em;
 }
 
 h2 {

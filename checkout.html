@@ -6,7 +6,7 @@
     <link rel="stylesheet" href="css/checkout.css">
     <title>Check Out</title>
 </head>
-<body>
+<body id="checkout">
     <section>
         <header>
             <img src="/photos/home-button.png" width="80" alt="home button" usemap="#home-button">
@@ -31,15 +31,15 @@
     
     <h1 style="color: white;">Check Out</h1>
 
-    <section>
-        <h2>JurassicPAY<img src="/photos/Jurassicpay.png" alt="JurassicPAY" width="50"></h2>
-        <p>Phone Number</p>
-        <p>PIN</p>
-        <p>cvv</p>
+    <section class="info">
+        <h2><img src="/photos/Jurassicpay.png" alt="JurassicPAY" width="50"> JurassicPAY</h2>
+        <input type="text" name="number" placeholder="Phone Number" maxlength="15" size="10">
+        <input type="text" name="name" placeholder="PIN" minlength="4" maxlength="4" size="5">
+        <input type="text" name="name" placeholder="cvv" minlength="3" maxlength="3" size="5">
     </section>
 
     <section>
-        <p>Enter</p>
+        <h3><a href="">Enter</a><h3>
     </section>
 
     <hr/>

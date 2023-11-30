@@ -14,12 +14,15 @@ header {
 }
 
 header h1{
-    font-size:5em;
+    display: flex;
+    font-size:2em;
+    color:black;
+    align-items: center;
 }
 
 .button {
-    width: 10em;
-    height: 10em;
+    width: 6em;
+    height: 6em;
 }
 
 .logo {
@@ -47,15 +50,13 @@ a {
 }
 
 .half {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50em;
-    height: 50em;
+    width:2000px;
+    height: 1000px;
     
 }
 
 p {
+    margin-top: 1em;
     color: white;
     font-size: 29px;
 }
@@ -82,3 +83,15 @@ ul {
     font-size:50px;
 }
 
+body, html {
+    height: 100%;
+    width: auto;
+}
+
+.dinobackground {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height:auto;
+}

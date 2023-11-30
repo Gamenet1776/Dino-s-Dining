@@ -14,13 +14,13 @@ header {
 }
 
 header h1{
-    font-size:5em;
+    font-size:2em;
     color:black;
 }
 
 .button {
-    width: 10em;
-    height: 10em;
+    width: 6em;
+    height: 6em;
 }
 
 .logo {
@@ -55,16 +55,6 @@ a {
     height: 50em;
 }
 
-header h1{
-    font-size:5em;
-}
-
-
-.logo {
-    width: 5em;
-    height: 5em;
-}
-
 h1 {
     display:flex;
     justify-content: center;
@@ -91,16 +81,8 @@ h1 {
         width: 500px;
     }
 
-    .container {
-        display: flex;
-      }
-      
       .img {
         flex: 0 0 auto;
-      }
-
-      .text {
-        flex:1;
       }
 
       .right {
@@ -108,3 +90,36 @@ h1 {
         flex-direction: row;
         justify-content: flex-end;
     }
+
+    .container {
+        display: flex;
+      }
+      
+     .frame {
+        display: flex;
+        flex:1;
+        margin-right:20px ;
+     } 
+
+     .frame img {
+        max-width: 100%;
+        height:auto;
+        margin-right:10px;
+     }
+
+     .column {
+        display: flex;
+        flex-direction: column;
+        margin-right: 200px;
+     }
+
+     .bottom {
+        display: flex;
+        flex-direction: column;
+        margin-top: 200px;
+     }
+
+     .text {
+        display:flex;
+        flex-direction: column;
+     }
