@@ -13,6 +13,13 @@ header {
     justify-content: space-around;
 }
 
+header h1{
+    display: flex;
+    font-size:2em;
+    color:black;
+    align-items: center;
+}
+
 .logo {
     width: 5em;
     height: 5em;
@@ -42,14 +49,20 @@ a {
     font-size: 26px;
 }
 
+.enter a, .confirm a {
+    margin: 1em;
+    padding: 10px 10px;
+    font-size: 20px;
+}
+
 h1 {
+    color: white;
     text-align: center;
     margin: 1em;
 }
 
 header h1 {
     color: black;
-    margin: 1em;
 }
 
 h2 {
@@ -65,6 +78,10 @@ p {
 
 input {
     margin-left: 2em;
+}
+
+.total {
+    display: flex;
 }
 
 

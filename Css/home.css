@@ -52,7 +52,8 @@ a {
 .half {
     width:2000px;
     height: 1000px;
-    
+    margin-right: 50px;
+    margin-left: 50px;
 }
 
 p {
@@ -62,6 +63,7 @@ p {
 }
 
 h2 {
+    margin-left: 50px;
     color:white;
     font-size:50px;
 }
@@ -70,6 +72,7 @@ h2 {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
+    margin-right: 50px;
 }
 
 .textright {
@@ -81,6 +84,7 @@ h2 {
 ul {
     color:white;
     font-size:50px;
+    margin-left: 50px;
 }
 
 body, html {
@@ -94,4 +98,34 @@ body, html {
     align-items: center;
     width: 100%;
     height:auto;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    margin-right: 800px;
+    margin-left: 50px;
+ }
+
+ .margin {
+    margin-right: 50px;
+ }
+
+ .smaller {
+    width:500px;
+    height:500px;
+ }
+
+ .marginbottom {
+    display: flex;
+    margin-left: 20px;
+    
+ }
+
+ .product {
+    margin-left: 1em;
+    margin-top: 2em;
+    padding: 1em;
+    background-color: #236154;
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
 }

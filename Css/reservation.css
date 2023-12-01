@@ -13,6 +13,13 @@ header {
     justify-content: space-around;
 }
 
+header h1{
+    display: flex;
+    font-size:2em;
+    color:black;
+    align-items: center;
+}
+
 .button {
     width: 10em;
     height: 10em;
@@ -40,4 +47,30 @@ a {
     text-decoration: none;
     display: inline-block;
     font-size: 26px;
+}
+
+p {
+    margin-top: 1em;
+    color: white;
+    font-size: 20px;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin: 1em;
+}
+
+header h1 {
+    color: black;
+    margin: 1em;
+}
+
+h2 {
+    color:white;
+    font-size:30px;
+}
+
+h3 {
+    color: white;
 }
