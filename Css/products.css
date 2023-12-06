@@ -1,11 +1,7 @@
 * {
+    box-sizing: border-box;
     margin:0;
     padding: 0;
-}
-
-body {
-    background: #527B65;
-    font-family: 'Trebuchet MS';
 }
 
 header {
@@ -23,7 +19,7 @@ header h1{
 
 .img {
     flex: 0 0 auto;
-  }
+}
 
 .button {
     width: 6em;
@@ -54,6 +50,11 @@ a {
     font-size: 26px;
     border-radius: 30px;
     box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
+}
+
+a:hover {
+    background-color: black;
+    transition: background-color 500ms ease;
 }
 
 .product a {
@@ -93,8 +94,74 @@ h1 {
 h2 {
     color:white;
     font-size: 50px;
+    text-align: center;
+    margin: 10px;
+}
+
+h3 {
+    color: white;
+    font-size: 20px;
 }
 
 span {
     color: white;
+}
+
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    min-height: 100vh;
+    background: #527B65;
+    font-family: 'Trebuchet MS';
+}
+
+#products {
+    max-width: 1280px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    margin-bottom: 2rem;
+}
+
+.product {
+    border: solid 1px black;
+    background-color: #236154;
+    padding: 0.5rem;
+    transition: box-shadow 500ms ease;
+    position: relative;
+}
+
+.product:hover,
+.cartItem:hover {
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+.prodImage {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+}
+
+.prodPrice::before {
+    content: "$ ";
+}
+
+.prodPrice {
+    display: inline-block;
+    margin-top: 0.5em;
+}
+
+.prodBtn,
+.removeBtn,
+#emptyCart {
+    display: block;
+    float: right;
+    background-color:#4B95A9;
+    color: white;
+    padding: 1em;
+    text-decoration: none;
+    border-radius: 0.5em;
+    transition: background-color 500ms ease;
 }
