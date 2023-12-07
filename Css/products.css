@@ -165,3 +165,9 @@ body {
     border-radius: 0.5em;
     transition: background-color 500ms ease;
 }
+@media only screen and (max-width: 640px) {
+    #products {
+        padding: 1em;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
