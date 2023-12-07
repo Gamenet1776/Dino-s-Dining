@@ -103,6 +103,18 @@ body, html {
     height:auto;
 }
 
+.pictures-container {
+
+}
+
+.pictures {
+    display: flex;
+    overflow-x: scroll;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -webkit-overflow-scrolling: touch;
+}
+
 .column {
     display: flex;
     flex-direction: column;
