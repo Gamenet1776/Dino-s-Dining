@@ -125,7 +125,6 @@ body {
 }
 
 .product {
-    border: solid 1px black;
     background-color: #236154;
     padding: 0.5rem;
     transition: box-shadow 500ms ease;
@@ -165,6 +164,7 @@ body {
     border-radius: 0.5em;
     transition: background-color 500ms ease;
 }
+
 @media only screen and (max-width: 640px) {
     #products {
         padding: 1em;

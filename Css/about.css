@@ -1,6 +1,7 @@
 * {
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -127,25 +128,25 @@ p {
      }
 
 .center {
-        display: column;
-        align-items: center;
-        justify-content: center;
-        justify-content: space-between;
-        margin-top: 100px;
-    }
+    display: column;
+    align-items: center;
+    justify-content: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
     
- h4 {
-        color: white;
-     }
+h4 {
+    color: white;
+}
 
 h3 {
-        color: white;
-        font-size: larger;
-     }
+    color: white;
+    font-size: larger;
+}
 
-     .margin {
-        margin-right: 500px;
-     }
+.margin {
+    margin-right: 500px;
+}
 
      @media only screen and (max-width: 640px) {
         #products {

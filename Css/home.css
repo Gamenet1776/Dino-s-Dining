@@ -1,6 +1,7 @@
 * {
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -103,16 +104,86 @@ body, html {
     height:auto;
 }
 
-.pictures-container {
+/*carousel*/
 
+.pictures-container {
+    width: 500px;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
 }
 
 .pictures {
     display: flex;
-    overflow-x: scroll;
+    overflow-x: hidden;
     scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
+}
+
+.pictures::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+.pictures::-webkit-scrollbar-thumb {
+    background: black;
+    border-radius: 10px;
+}
+
+.pictures::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.pictures > div {
+    scroll-snap-align: start;
+    flex-shrink: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    background: #eee;
+    transform-origin: center center;
+    transform: scale(1);
+    transition: transform 0.5s;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.pictures-container img {
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.pictures-nav {
+    position: absolute;
+    z-index: 2;
+    bottom: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.pictures-nav > a {
+    display: inline-flex;
+    width: 1.5rem;
+    height: 1.5rem;
+    background: rgba(255, 255, 255, 0.5);
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    margin: 0 0.25rem;
+}
+
+.pictures-nav > a:focus {
+    background: #000;
 }
 
 .column {
@@ -124,6 +195,7 @@ body, html {
 
  .margin {
     margin-right: 50px;
+    margin-bottom: 1em;
  }
 
  .smaller {
@@ -141,7 +213,7 @@ body, html {
     margin-top: 2em;
     padding: 1em;
     background-color: #236154;
-    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.5);
 }
 
 .menu {

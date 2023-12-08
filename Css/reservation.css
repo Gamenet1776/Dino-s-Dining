@@ -1,6 +1,7 @@
 * {
     margin:0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -63,12 +64,11 @@ p {
     font-size: 20px;
 }
 
-h1 {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+h2 {
     color: white;
     font-size:50px;
+    text-align: center;
+    margin: 10px;
 }
 
 header h1 {
@@ -78,30 +78,22 @@ header h1 {
     align-items: center;
 }
 
-h2 {
-    color:white;
-    font-size:30px;
-}
-
-h3 {
+h3, figcaption {
     color: white;
 }
 
-.photo {
+.photos {
     display: flex;
-    flex: 1;
-    margin-right:20px;
-}
-
-.photo img {
+    justify-content: space-around;
+    margin: 1em;
     max-width:100%;
     height: auto;
-    margin-right: 10px;
 }
 
-.text {
-    display:flex;
-    flex-direction:column;
+.info, .reserve, .hours {
+    background-color: #236154;
+    padding: 1em;
+    margin: 1em;
 }
 
 @media only screen and (max-width: 640px) {
